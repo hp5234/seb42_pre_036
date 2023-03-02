@@ -77,6 +77,8 @@ const MypageDelete = ({ userInfo }) => {
       deleteReq()
         .then((res) => {
           console.log(res.data);
+          window.sessionStorage.clear();
+          window.localStorage.clear();
           window.location.replace("/");
         })
         .catch((err) => console.log(err));

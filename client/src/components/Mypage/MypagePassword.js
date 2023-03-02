@@ -13,7 +13,7 @@ const MypagePassword = ({ userInfo }) => {
   const newPass = useRef();
 
   const patchReq = async (data) => {
-    const axiosPatch = (data) => {
+    const axiosPatch = () => {
       return axios
         .patch(`/api/members/${sessionStorage.getItem("memberId")}/password`, data, {
           headers: {
@@ -34,10 +34,11 @@ const MypagePassword = ({ userInfo }) => {
 
   const changePwd = () => {
     const setting = { memberId: sessionStorage.getItem("memberId"), password: newPwd };
-    if (newPwd != pwdCheck || !pwdReg || !checkReg) {
+    if (newPwd !== pwdCheck || !pwdReg || !checkReg) {
       alert("비밀번호 양식이 맞지 않습니다. 다시 확인해주세요");
       newPass.current.focus();
     } else {
+      console.log(setting);
       patchReq(setting)
         .then((res) => {
           alert("비밀번호가 변경되었습니다");
