@@ -14,6 +14,7 @@ import Alert from "./pages/Alert";
 import AskQuestion from "./pages/AskQuestion";
 import Mypage from "./pages/Mypage";
 import { useSelector } from "react-redux";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const { currentPageReducer } = useSelector((state) => state);
@@ -30,6 +31,7 @@ function App() {
         <Route path="/alert/:type" element={<Alert />} />
         <Route path="/ask" element={<AskQuestion />} />
         <Route path="/mypage" element={<Mypage />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
       {currentPageReducer === "Users" ? <></> : <Footer />}
     </BrowserRouter>
