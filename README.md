@@ -64,7 +64,7 @@
   - <img src="https://img.shields.io/badge/Lombok-green?style=flat&logo=Flask&logoColor=white"/>  Lombok
   - <img src="https://img.shields.io/badge/Mapstruct-orange?style=flat&logo=&logoColor=white"/> Mapstruct v1.5.1 
   - <img src="https://img.shields.io/badge/gson-orange?style=flat&logo=gson&logoColor=white"/>  gson
-  - <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white"/> MySQL v5.7
+  - <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white"/> MySQL v8.0.3
   - <img src="https://img.shields.io/badge/ AWS EC2-FF9900?style=flat&logo=Amazon EC2&logoColor=white"/> AWS EC2
   - <img src="https://img.shields.io/badge/ AWS RDS-527FFF?style=flat&logo=Amazon RDS&logoColor=white"/> AWS RDS
 
